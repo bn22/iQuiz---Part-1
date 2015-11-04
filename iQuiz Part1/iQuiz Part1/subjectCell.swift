@@ -27,6 +27,7 @@ class subjectCell: UITableViewCell {
             }
         }
     }
+    
     var descript: String = "" {
         didSet {
             if (descript != oldValue) {
@@ -35,7 +36,16 @@ class subjectCell: UITableViewCell {
         }
     }
     
+    var subject: String = "" {
+        didSet {
+            if (subject != oldValue) {
+                subjectLabel.text = subject
+            }
+        }
+    }
+    
     @IBOutlet weak var imageLabel: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptLabel: UILabel!
+    @IBOutlet weak var subjectLabel: UILabel!
 }

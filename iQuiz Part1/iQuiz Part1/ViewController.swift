@@ -44,6 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.title = rowData["Name"]!
         cell.descript = rowData["Description"]!
         cell.imageLabel?.image = UIImage(named: rowData["Photo"]!)
+        cell.subject = "Subject:"
         return cell
     }
 
